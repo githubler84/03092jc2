@@ -295,3 +295,18 @@ function connectParticles() {
 
 initParticles();
 animateParticles();
+
+// ==========================================
+// RANDOM NOTE LOGIC
+// ==========================================
+const notes = [
+    "Made by a 7th grader! Crazy Right!?",
+    "More games coming soon.",
+    "Dont gatekeep, new links coming dont worry"
+];
+
+const noteElement = document.getElementById('random-note');
+if (noteElement) {
+    const randomNote = notes[Math.floor(Math.random() * notes.length)];
+    noteElement.textContent = randomNote;
+}
