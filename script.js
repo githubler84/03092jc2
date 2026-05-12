@@ -303,6 +303,12 @@ const notes = [
     "Made by a 7th grader! Crazy Right!?",
     "More games coming soon.",
     "Dont gatekeep, new links coming dont worry"
+    "Random Shoutout to Lorenzo!"
+    "Rizzy the goat!"
+    "Cammron DJ HOP OF E-BIKE SIM BRO!"
+    "Ms. Hasanani STOP BLOCKING LINKS PLEASE!
+    "Shout out to Ms, Mcdonnel for being a cool teacher"
+    "New update gonna take like 6-7 Days or so"
 ];
 
 const noteElement = document.getElementById('random-note');
