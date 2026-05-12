@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <header>
+            <div class="datetime-wrapper">
+                <div id="time-display" class="time-display">00:00:00</div>
+                <div id="date-display" class="date-display">Loading date...</div>
+            </div>
+            <h1 class="logo">NEXUS</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search games...">
+            </div>
+        </header>
+
+        <main>
+            <div class="games-grid" id="games-grid">
+                <!-- Games will be dynamically injected here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Fullscreen Game Modal -->
+    <div id="game-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Game</h2>
+                <div class="modal-controls">
+                    <button id="fullscreen-btn" title="Fullscreen">⛶</button>
+                    <button id="close-modal-btn" title="Close">✕</button>
+                </div>
+            </div>
+            <div class="iframe-container">
+                <iframe id="game-iframe" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
